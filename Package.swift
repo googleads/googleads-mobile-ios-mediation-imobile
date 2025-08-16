@@ -22,22 +22,28 @@ let package = Package(
   products: [
     .library(
       name: "IMobileAdapterTarget",
-      targets: ["IMobileAdapterTarget"]
+      targets: ["IMobileAdapterTarget", "IMobileSDK"]
     )
   ],
   targets: [
     .target(
       name: "IMobileAdapterTarget",
       dependencies: [
-        .target(name: "Adapter"),
+        .target(name: "IMobileAdapter"),
       ],
       path: "IMobileAdapterTarget"
     ),
     .binaryTarget(
-      name: "Adapter",
+      name: "IMobileAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/imobile/IMobileAdapter-2.3.4.2.zip",
-      checksum: ""
+      checksum: "4ecf19cb1d0122ac6b297438e6ef300a831548fc13fc4405d252d953f87b7ba7"
+    ),
+    .binaryTarget(
+      name: "IMobileSDK",
+      url:
+        "https://github.com/imobile/adnw-sdk-ios/releases/download/v2.3.4/ImobileSdkAds.xcframework.zip",
+      checksum: "6085707cdbc5520b4c61df617f372ca60102b13c34485ba7205323a8cc966dc7"
     ),
   ]
 )
