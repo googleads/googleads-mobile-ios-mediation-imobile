@@ -25,11 +25,18 @@ let package = Package(
       targets: ["IMobileAdapterTarget", "IMobileSDK"]
     )
   ],
+  dependencies: [
+    .package(
+      url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
+      from: "12.0.0"
+    )
+  ],
   targets: [
     .target(
       name: "IMobileAdapterTarget",
       dependencies: [
         .target(name: "IMobileAdapter"),
+        .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
       ],
       path: "IMobileAdapterTarget"
     ),
