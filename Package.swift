@@ -18,7 +18,7 @@ import PackageDescription
 
 let package = Package(
   name: "IMobileAdapter",
-  platforms: [.iOS(.v12)],
+  platforms: [.iOS(.v13)],
   products: [
     .library(
       name: "IMobileAdapterTarget",
@@ -28,7 +28,7 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
-      from: "12.0.0"
+      from: "13.0.0"
     )
   ],
   targets: [
@@ -43,8 +43,8 @@ let package = Package(
     .binaryTarget(
       name: "IMobileAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/imobile/IMobileAdapter-2.3.4.2.zip",
-      checksum: "4ecf19cb1d0122ac6b297438e6ef300a831548fc13fc4405d252d953f87b7ba7"
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/imobile/IMobileAdapter-2.3.4.5.zip",
+      checksum: "d437ff111b2e49f0adbf0efa3fcb699b904fb708d3adb2ee4eacab3cf756375b"
     ),
     .binaryTarget(
       name: "IMobileSDK",
