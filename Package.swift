@@ -43,7 +43,7 @@ let package = Package(
     .binaryTarget(
       name: "IMobileAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/imobile/IMobileAdapter-2.3.4.5.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/imobile/IMobileAdapter-2.3.4.6.zip",
       checksum: "d437ff111b2e49f0adbf0efa3fcb699b904fb708d3adb2ee4eacab3cf756375b"
     ),
     .binaryTarget(
